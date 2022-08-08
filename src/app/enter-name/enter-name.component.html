@@ -1,0 +1,15 @@
+<div id="page">
+    <div id="center">
+        <h3 style="font-size: 15pt">
+            Enter your full name! Don't spell it wrong!
+        </h3>
+    </div>
+
+    <div id="center">
+        <mat-form-field>
+            <input matInput [(ngModel)]="name" type="text" placeholder="Name" (keydown.enter)="handle_name_submit()">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button (click)="handle_name_submit()">Submit</button>
+    </div>
+</div>
